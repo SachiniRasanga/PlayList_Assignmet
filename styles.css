@@ -329,12 +329,16 @@ header {
     .actions{
         flex-direction: column-reverse;
         margin-top: 5px;
-       
+
+            /* flex: 1;  */
+           
+        }
+        
     
     }
     .actions button{
 
-        margin-right: 90px;
+        margin-right: 120px;
 
     }
     .search-bar {
