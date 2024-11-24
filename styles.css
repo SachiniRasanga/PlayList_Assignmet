@@ -324,7 +324,7 @@ header {
         position: fixed;
         margin-bottom: 60px;
         margin-right: 220px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .actions{
         flex-direction: column-reverse;
