@@ -323,11 +323,19 @@ header {
 
         position: fixed;
         margin-bottom: 60px;
-        margin-right: 150px;
+        margin-right: 200px;
+        font-size: 20px;
     }
     .actions{
         flex-direction: column-reverse;
         margin-top: 5px;
+       
+    
+    }
+    .actions button{
+
+        margin-right: 90px;
+
     }
     .search-bar {
        
