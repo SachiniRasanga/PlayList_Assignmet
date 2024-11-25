@@ -365,7 +365,7 @@ header {
     .actions h1{
 
         position: fixed;
-        margin-bottom: 80px;
+        margin-bottom: 90px;
         margin-right: 200px;
         font-size: 20px;
         
@@ -386,7 +386,7 @@ header {
     .search-bar {
        
         width: 220px; 
-        margin-left: 20px;
+        margin-left: 10px;
         margin-right: auto;
       
        
