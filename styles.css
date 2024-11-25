@@ -55,7 +55,7 @@ header {
 }
 
 .search-bar i {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
@@ -76,21 +76,68 @@ header {
     font-weight: 500;
     line-height: normal;
 }
+.dropdown{
 
-.dropdown select {
+    width:8rem;
+    position: relative;
+}
+.dropdown:hover .dropdown-list{
+
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown-select {
     
-   border: 1px solid #a4a3a3;
+    padding: 1.5rem;
     border-radius: 4px;
-    cursor: pointer;
-    margin: 0 auto;
-    border: none;
-    margin-left: 0;
     background-color: #0D101B;
-    color: var(--Secondary-Chairsyde-White, #FFF);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    cursor: pointer;
     font-family: "inter";
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
+}
+.dropdown-list{
+
+    border-radius: 4px;
+    background-color:#171f41;
+    position: absolute;
+    top:110%;
+    left:0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear , visibility 0.2s linear;
+
+}
+.dropdown-list::before {
+    content: "";
+    position: absolute;
+    top: -10px; 
+    left: 70%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px; 
+    height: 20px; 
+    background-color: #171f41; 
+}
+
+.dropdown-list-item{
+
+     padding: 0.7rem;
+     font-size: 10px;
+
+
+}
+.dropdown-list-item:hover{
+
+    color: #FC5E64;
+
+
 }
 
 .actions button {
@@ -181,17 +228,30 @@ header {
 .dropdown1-content {
     display: none;
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 0;
     background-color: #171f41;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
+
+.dropdown1-content::before {
+
+    content: "";
+    position: absolute;
+    top: -5px; 
+    left: 70%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 10px; 
+    height: 10px; 
+    background-color: #171f41; 
+}
+
 .dropdown1-content a {
     display: flex;
     padding: 10px;
     gap: 10px;
-    font-size: 14px;
+    font-size: 10px;
     color: #fff;
     text-decoration: none;
 }
@@ -203,8 +263,6 @@ header {
 .dropdown1:hover .dropdown1-content {
     display: block;
 }
-
-
 
 @media (max-width: 1024px) {
     .header {
