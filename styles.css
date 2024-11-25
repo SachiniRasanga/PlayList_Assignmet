@@ -365,7 +365,7 @@ header {
     .actions h1{
 
         position: fixed;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
         margin-right: 200px;
         font-size: 20px;
         
@@ -385,7 +385,7 @@ header {
     }
     .search-bar {
        
-        width: 250px; 
+        width: 220px; 
         margin-left: 20px;
         margin-right: auto;
       
@@ -412,7 +412,7 @@ header {
 
        
     }
-
+   
     .dropdown1-content a {
     
         font-size: 10px;
